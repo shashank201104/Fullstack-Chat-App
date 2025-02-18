@@ -75,7 +75,7 @@ const Sidebar = () => {
       </p>
 
       <ul className="overflow-y-auto h-1/1 scrollbar">
-        {filteredUsers.map((user) => {
+        {filteredUsers?.map((user) => {
           return (
             <button
               key={user._id}

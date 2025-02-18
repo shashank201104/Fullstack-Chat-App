@@ -17,7 +17,7 @@ const SidebarSkel = () => {
 
       {/* Skeleton Contacts */}
       <div className="overflow-y-scroll scrollbar w-full py-3 text-white">
-        {skeletonContacts.map((_, idx) => (
+        {skeletonContacts?.map((_, idx) => (
           <div key={idx} className="w-full py-3 flex items-center gap-3">
             {/* Avatar Skeleton */}
             <div className="relative mx-auto lg:mx-0 overflow-clip">

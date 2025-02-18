@@ -64,7 +64,7 @@ const ChatContainer = () => {
         className={`flex flex-col flex-grow overflow-y-auto p-4 space-y-4 
           scrollbar font-bold text-white backdrop-blur-xs `}
       > 
-        {messages.map((message) => (
+        {messages?.map((message) => (
           <div
             key={message._id}
             className={`flex items-end gap-2 ${

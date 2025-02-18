@@ -1,6 +1,6 @@
 @import "tailwindcss";
 body{
-    background: url('../public/Signup-bgImage.jpg');
+    background: url('/Signup-bgImage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

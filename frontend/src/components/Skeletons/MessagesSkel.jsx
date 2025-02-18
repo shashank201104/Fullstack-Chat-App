@@ -6,7 +6,7 @@ const MessageSkeleton = () => {
 
   return (
     <div className="flex-1  p-4 space-y-4 scrollbar overflow-y-auto">
-      {skeletonMessages.map((_, idx) => (
+      {skeletonMessages?.map((_, idx) => (
         <div
           key={idx}
           className={`flex ${idx % 2 === 0 ? "justify-start" : "justify-end"}`}
