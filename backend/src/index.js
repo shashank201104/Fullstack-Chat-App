@@ -23,10 +23,10 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser())
 app.use(cors({
-  origin: "http://localhost:5173", // Allow frontend origin
-  credentials: true, // Allow cookies/auth headers
-  methods: "GET,POST,PUT,DELETE", // Allowed HTTP methods
-  allowedHeaders: "Content-Type,Authorization", // Allowed headers
+  origin: "*", 
+  credentials: true, 
+  methods: "GET,POST,PUT,DELETE", 
+  allowedHeaders: "Content-Type,Authorization", // 
 }));
 app.use("/api/auth", AuthRoute);
 app.use("/api/message",messageRoute)
